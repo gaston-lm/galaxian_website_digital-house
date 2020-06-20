@@ -1,3 +1,5 @@
+JSON.parse('[1, 2, 3, 4]');
+JSON.parse('{"foo": 1}');
 window.addEventListener("load", function() { 
 
     let queryString = new URLSearchParams(location.search);
