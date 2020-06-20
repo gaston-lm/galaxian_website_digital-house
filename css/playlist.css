@@ -1,0 +1,207 @@
+body{
+    padding: 0;
+    background-color: rgb(12, 8, 7);
+}
+
+main{
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 95%;
+}
+
+.imagen{
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+.imagen img{
+    width: 100%;
+} 
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.tituloyagregar {
+    display: grid;
+    grid-template-rows: 75px;
+    grid-template-columns: 80% 15%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.favoritas {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding: 17px;
+    border: solid 3px white;
+}
+
+.agregar-cancion {
+    text-align: center;
+    color:#2f9bc1;
+    font-size: 25px;
+    border: solid 3px #2f9bc1;
+}
+
+.agregar-cancion i{
+    padding-top: 20px;
+}
+
+.cancion{ 
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 30px 20px;
+    margin-bottom: 10px;
+    border-bottom: solid 0.5px white;
+}
+
+.nombre{
+    color: white;
+    text-align: left;
+    padding-top: 0 auto;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.duracion{
+    color: gray;
+    text-align: right;
+    font-size: small;
+}
+
+.artista a{
+    color: #2f9bc1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.explicacion{ 
+    display: none;
+}
+
+.album{
+    display: none;
+}
+
+.agregar-cancion h3{
+    display: none;
+}
+
+.agregado{
+    display: none;
+}
+
+@media only screen and (min-width: 1024px){
+
+    main{
+        width: 77%;
+        margin-left: 21%;
+        margin-top: 67px;
+    }
+    .container{
+        margin: 0px;
+    }
+
+    .presentacion{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        padding-left: 35px;
+        
+    }
+    .presentacion .tituloyagregar{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+    }
+
+
+    .presentacion .imagen{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .tituloyagregar h1{
+        border: 0px;
+        text-align: left;
+        margin-left:10px;
+        font-size: 40px;
+    }
+    .tituloyagregar .agregar-cancion {
+        border: 0px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .agregar-cancion h3{
+        display: block;
+    }
+    .agregar-cancion h2{
+        display: none;
+    }
+
+    .agregado{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: thistle;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .explicacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 40px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        width: 95%;
+    }
+    .explicacion p{
+        color: gray;
+        text-align: center;
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .explicacion .title {
+        text-align: left;
+        padding-left: 10px ;
+    }
+
+    .cancion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 75px;
+        margin: auto;
+        margin-left: 40px;
+        width: 95%;
+        border-top: solid 0.5px ghostwhite ;
+    }
+    .cancion p{
+        margin: auto;
+        color: white;
+        font-size: 23px;
+
+    }
+    .cancion .nombre{
+        margin-left: 5px;
+
+    }
+    .album{
+        display: block;
+    }
+    .artista a{
+        color: white;
+    }
+}

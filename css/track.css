@@ -1,0 +1,288 @@
+body{
+    padding: 0;
+    background-color: #0c0807;
+}
+    
+main{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 95%;
+}
+
+.presentacion {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.track-cover {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    color: ivory;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.details {
+    color: grey;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.add-track{
+    background-color: #2f9bc1;
+    height: 33px;
+    width: 82px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 32% auto;
+    box-sizing: border-box;
+    padding: 9px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.remove-track {
+    background-color: gray;
+    height: 33px;
+    width: 106px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 20% auto;
+    box-sizing: border-box;
+    padding: 9px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+.explicacion {
+    display: none;
+}
+
+.explicacion p {
+    color: gray;
+}
+
+.track-item {
+    color: ivory;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    padding: 10px;
+    border-top: grey 0.3px solid;
+}
+
+.explicit {
+    font-size: 7px;
+    color: grey;
+    border: gray solid 0.3px;
+    width: 11px;
+    height: 6px;
+    text-align: center;
+    margin: auto 0;
+    padding: 4px;
+}
+
+.duration {
+    color: rgb(197, 197, 197);
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.track {
+    font-size: 18px;
+    color: ivory;
+    display: block;
+}
+
+.album {
+    font-size: 14px;
+    color: #2f9bc1;
+}
+
+.track-title {
+    display: none;
+}
+
+.track-album {
+    display: none;
+}
+
+.artistDk {
+    display: none;
+}
+
+.released {
+    display: none;
+}
+
+.artist-link2 {
+    color: grey;
+}
+
+.artist-link {
+    color: rgb(165, 163, 163);;
+}
+
+@media only screen and (min-width: 1024px){
+    
+    main{
+        width: 76%;
+        margin-left: 23%;
+        margin-top: 67px;
+    }
+
+    .container{
+        margin: 0px;
+    }
+
+    .derecha {
+        position: relative;
+    }
+
+    .add-track {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        margin: 0;
+        height: 38px;
+        width: 94px;
+        font-size: 20px;
+    }
+
+    .remove-track {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        margin: 0;
+        height: 38px;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    .presentacion {
+        display: grid;
+        grid-template-columns: 45% auto;
+        width: 95%;
+        margin-bottom: 35px;
+    }
+
+    .title {
+        font-size: 30px;
+        text-align: left;
+        margin-top: 6px;
+    }
+
+    .artistDk {
+        display: block;
+        color: rgb(165, 163, 163);
+        margin-top: 8px;
+        font-size: 23px;
+    }
+
+    .details {
+        display: none;
+    }
+
+    .released {
+        display: block;
+        color: gray;
+        margin-top: 164px;
+        margin-right: 22px;
+    }
+
+    .released p {
+        font-size: 12px;
+        text-align: right;
+    }
+
+    .released h3 {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .track-item {
+        width: 85%;
+        margin: 0 auto;
+        grid-template-columns: 55% 10% 30% 10%;
+        margin-bottom: 100px;
+    }
+
+    .explicacion {
+        display: block;
+        width: 85%;
+        margin: 0 auto  ;
+        display: grid;
+        grid-template-columns: 65% 31% 5% ;
+    }
+
+    .explicacion p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .track-title {
+        display: block;
+        font-size: 22px;
+        color: ivory;
+    }
+
+    .track-album {
+        display: block;
+        font-size: 20px;
+        color: #2f9bc1;
+    }
+
+    .info-mobile {
+        display: none;
+    }
+
+    .duration {
+        font-size: 18pxs;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    main{
+        width: 83%;
+        margin-left: 17%;
+    }
+
+    .presentacion {
+        grid-template-columns: 30% auto;
+    }
+
+    .released {
+        margin-right: 73px;
+    }
+
+    .add-track {
+        right: 68px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .artistDk {
+        font-size: 26px;
+    }
+}

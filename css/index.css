@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #0c0807;
+}
+
+
+/* CSS de Banner */
+.banner{
+	background-image: url(../media/Fondos/banner-mobile.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+	height: 100vh;
+	position: relative;
+	z-index: 3;
+}
+
+.banner .nombre{
+	position: absolute;
+	bottom: 15px;
+	right: 0.2%;
+	z-index: 1;
+}
+.banner h1{
+	color: ivory;
+	font-family: 'Spartan', sans-serif;
+	font-size: 50px;
+	letter-spacing: 7px;
+	text-align: right;
+}
+
+.banner h2{
+	color: ivory;
+	font-family: 'Spartan', sans-serif;
+	font-size: 30px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.inicio-sesion {
+	position: absolute;
+	top: 120px;
+	width: 60%;
+	left: 76px;
+	background-color: rgba(82, 82, 82, 0.548);
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+
+.inicio-sesion p{
+	color: ivory;
+	font-family: 'Spartan', sans-serif;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.barra {
+	border: none;
+	width: 80%;
+	margin: 0 auto;
+    height: 15px;
+	font-size: 100%;
+	color: ivory;
+	outline:none;
+	background: transparent;
+	border-bottom: 1px solid gray;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.barra::placeholder {
+	color: #2f9bc1;
+}
+
+.error1::placeholder {
+	color: red;
+}
+
+.inicio-sesion p.label {
+	color: gray;
+	text-align: center;
+}
+
+form div {
+	width: fit-content;
+	margin: 10px auto;
+	margin-bottom: 0;
+}
+
+form {
+	position: relative;
+}
+
+form div label {
+	color: #2f9bc1;
+}
+button {
+	margin: 0 auto;
+	color: #2f9bc1;
+}
+
+a.music {
+	text-decoration: none;
+}
+
+/* CSS de Rankings */
+.charts{
+	width: 90%;
+	margin: 0 auto;
+}
+.ranking{
+	margin-top: 25px;
+}
+
+.ranking h2{
+	font-size: 27px;
+	color: ivory;
+	margin-bottom: 20px;
+}
+
+.ranking section{
+	margin-top: 30px;
+}
+
+.photo-container{
+    position: relative;
+}
+
+.fa-play-circle{
+	position: absolute;
+	bottom: 65px;
+	left: 15px;
+	color: ivory;
+	font-size: x-large;
+}
+
+img{
+	width: 100%;
+}
+
+.section-title{
+	color:ivory;
+	margin-bottom: 15px;
+	font-size: 35px;
+	padding-top: 72px;
+}
+.info-trackList{
+	display: none;
+}
+
+.rankingArg{
+	display: grid;
+	grid-template-columns: 50% 45%;
+	justify-content: space-between;
+}
+
+.trackList{
+	list-style-type: decimal-leading-zero;
+	margin-left: 50px;
+}
+
+
+.track-item{
+	margin-bottom: 10px;
+}
+
+.track-item a{
+	text-decoration: none;
+	font-size: 18px;
+}
+
+a.tNomb{
+	color: #2f9bc1;
+}
+
+a.aNomb{
+	color: #666666;
+}
+
+.carrousel{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.img-artist{
+	border-radius: 50%;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	border: #2f9bc1 solid 2px;
+}
+
+/* Modificiaciones UlKit */
+.uk-card-body{
+	padding: 0;
+	padding-top: 5px;
+}
+
+.uk-card-default{
+	background: transparent;
+}
+
+.uk-card-body a{
+	text-decoration: none;
+	color: #2f9bc1;
+}
+
+.uk-card-default .uk-card-title{
+	color: ivory;
+	font-size: 20px;
+}
+
+.uk-slider-items{
+	height: 340px;
+}
+/* Centrado de info en artistas */
+
+.artist-body-card{
+	width: 45%;
+	margin: 0 auto;
+}
+
+.artist-body-card h3{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.artist-body-card p{
+	text-align: center;
+}
+
+/* Display: none --> tablet/desktop */
+.nav-bigscreen{
+	display: none;
+}
+
+@media (min-width: 1024px){
+	main{
+		width: 78%;
+		margin-left: 22%;
+	}
+	.banner{
+		background-image: url(../media/Fondos/banner-bigscreen.jpg);
+	}
+	.uk-slider-items{
+		height: 185px;
+	}
+
+	.banner h1{
+		font-size: 80px;
+	}
+
+	.banner h2{
+		font-size: 50px;
+	}
+
+	.section-title{
+		padding-top: 77px;
+	}
+
+	.fa-play-circle {
+		bottom: 60px;
+		left: 11px;
+	}
+	/* Centrado de info en artistas */
+	.artist-body-card{
+		width: 96%;
+	}
+
+	.inicio-sesion {
+		top: 156px;
+		width: 36%;
+		left: 325px;
+	}
+
+}
+
+@media (min-width: 1440px){
+	main{
+		width: 80%;
+		margin-left: 20%;
+	}
+
+	.uk-slider-items{
+		height: 260px;
+	}
+
+	.track-item a{
+		font-size: 23px;
+	}
+
+	/* Centrado de info en artistas */
+	.artist-body-card{
+		width: 100%;
+	}
+	.artist-body-card span{
+		margin-left: 52px;
+	}
+
+	.inicio-sesion {
+		top: 190px;
+		width: 27%;
+		left: 540px;
+	}
+}

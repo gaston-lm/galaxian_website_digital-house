@@ -1,0 +1,402 @@
+body {
+    font-family: sans-serif;
+    background-color: #0c0807;
+    margin-bottom: 0;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+main h2 {
+    color: ivory;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.headings {
+    display: none;
+}
+
+ul {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.img-container {
+    display: none;
+}
+
+.track-album {
+    display: none;
+}
+
+.track-title {
+    display: none;
+}
+
+.track-artist {
+    display: none;
+}
+
+.track-item {
+    color: ivory;
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: grey 0.3px solid;
+}
+
+.el-ultimo {
+    border-bottom: none;
+}
+
+.track-item-mouseover {
+    background-color: rgba(53, 47, 68, 0.692);
+}
+
+.fa-heart {
+    color: rgb(197, 197, 197);
+}
+
+.fav {
+    margin: auto 8px;
+    margin-top: 10px;
+}
+
+.track {
+    font-size: 18px;
+    color: ivory;
+    display: block;
+}
+
+.artist {
+    font-size: 14px;
+    color: #2f9bc1;
+}
+
+.explicit {
+    font-size: 7px;
+    color: grey;
+    border: gray solid 0.3px;
+    width: 11px;
+    height: 6px;
+    text-align: center;
+    margin: auto 0;
+    padding: 4px;
+}
+
+.duration {
+    color: rgb(197, 197, 197);
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.botones {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+.botones a {
+    color: rgb(211, 211, 211);
+    background-color: rgba(128, 128, 128, 0.61);
+    font-size: 15px;
+    padding: 7px;
+}
+
+.more {
+    position: absolute;
+    right: 0;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.pri {
+    padding-top: 73px;
+    font-size: 32px;
+}
+
+/* copia de index.css para carrousel */
+
+.playCar{
+	position: absolute;
+	bottom: 65px;
+	left: 15px;
+	color: ivory;
+	font-size: x-large;
+}
+
+img{
+	width: 100%;
+}
+
+.carrousel{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.img-artist{
+	border-radius: 50%;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	border: #2f9bc1 solid 2px;
+}
+
+
+/* Modificiaciones UlKit */
+.uk-card-body{
+	padding: 0;
+	padding-top: 5px;
+}
+
+.uk-card-default{
+	background: transparent;
+}
+
+.uk-card-body a{
+	text-decoration: none;
+	color: #2f9bc1;
+}
+
+.uk-card-default .uk-card-title{
+	color: ivory;
+	font-size: 20px;
+}
+
+.uk-slider-items{
+	height: 340px;
+}
+
+.uk-grid {
+    margin-left: -16px;
+}
+
+.uk-margin {
+    margin-top: 0px!important;
+}
+
+/* Centrado de info en artistas */
+
+.artist-body-card{
+	width: 45%;
+	margin: 0 auto;
+}
+
+.artist-body-card h3{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.artist-body-card p{
+	text-align: center;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    main{
+		width: 77%;
+        margin-right: 0;
+    }
+
+    .play {
+        display: none;
+        text-decoration: none;
+        font-size: 22px;
+        width: 31.96px;
+        height: 31.96;
+        color: #2f9bc1;
+        position: absolute;
+        right: -5px;
+        top: 0;
+    }
+    main h2 {
+        margin-bottom: 18px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    ul {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .headings {
+        display: block;
+        color: ivory;
+        display: grid;
+        grid-template-columns: 8% 40% 20% 24% 5%;
+        margin-bottom: 10px;
+    }
+
+    .headings h3 {
+        color: grey ;
+        padding-left: 8px;
+    }
+
+    .dur {
+        padding-left: 0 !important;
+    }
+
+    .img-container {
+        display: block;
+        position: relative;
+    }
+
+    .img-container img {
+        border-radius: 4px;
+    }
+
+    .info-mobile {
+        display: none;
+    }
+
+    a {
+        margin: auto 0;
+        text-decoration: none;
+    }
+    .track-title {
+        display: block;
+        color: ivory;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .track-artist {
+        display: block;
+        color: ivory;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .track-album {
+        display: block;
+        color: ivory;
+        font-size: 15px;
+    }
+
+    .track-item {
+        grid-template-columns: 3% 5% 35% 5% 20% 20% 10%;
+        padding-left: 8px;
+    }
+
+    .duration {
+        margin: auto auto;
+    }
+
+    .fav {
+        margin-top: 4px;
+    }
+
+    .botones {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* copia de index.css para carrousel */
+
+    .uk-slider-items{
+		height: 185px;
+    }
+    
+    .uk-grid {
+        margin-left: -30px;
+    }
+
+    .playCar {
+		bottom: 60px;
+		left: 11px;
+    }
+    
+    .uk-margin {
+        margin-top: 20px!important;
+    }
+	/* Centrado de info en artistas */
+	.artist-body-card{
+		width: 96%;
+	}
+}
+
+@media only screen and (min-width: 1440px){
+    main{
+        width: 83%;
+        margin-left: 17%;
+    }
+
+    main h2 {
+        margin-left: 60px;
+    }
+
+    .play {
+        font-size: 29px;
+        width: 34.0625px;
+        margin-left: 1px;
+        right: 0;
+    }
+
+    .track-title {
+        font-size: 22px;
+    }
+
+    .track-artist {
+        font-size: 20px;
+    }
+
+    .track-album {
+        font-size: 20px;
+    }
+
+    .explicit {
+        font-size: 9px;
+    }
+
+    .track-item {
+        padding-bottom: 13px;
+        padding-top: 13px;
+        padding-left: 10px;
+    }
+
+    .headings h3 {
+        padding-left: 8px;
+    }
+
+    .dur {
+        padding-left: 0 !important;
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    .botones {
+        width: 90%;
+    }
+
+    .fav {
+        font-size: 22px;
+        margin-left: 13px;
+    }
+
+    .uk-margin {
+        margin-top: 100px!important;
+    }
+
+
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxian - Géneros</title>
+    <link rel="shortcut icon" href="media/icon/favicon-32x32.png">
+    <!-- Font & Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <!-- Galaxian CSS -->
+    <link rel="stylesheet" href="css/genders.css">
+    <link rel="stylesheet" href="css/fijo.css">
+    <link rel="stylesheet" href="css/menuPC.css">
+    <!-- Galaxian JS -->
+    <script src="js/genders.js"></script>
+    <script src="js/fijo.js"></script>
+</head>
+<body>
+    <!-- HEADER INICIO -->
+    <header class="header">
+        <a class="1" href="index.html"><img src="media/icon/favicon-32x32.png" alt="Logo Galaxian" class="logo"></a>
+        <div class="buscador">
+            <form action="search-results.html" method="GET">
+                <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+                <input class="searcher" type="text" placeholder="" name="searcher" id="">
+            </form>
+        </div>
+        <nav class="main-nav">
+            <a href="#" class="toggle-nav">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+            <ul class="navegacion">
+                <li><a class="home" href="index.html"></a></li>
+                <li><a class="account" href="micuenta.html"></a></li>
+                <li><a class="favo" href="favorites.html"></a></li>
+                <li class="genero"><a class="genre" href="genders.html"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER FINAL -->
+
+    <!-- nav pc -->
+    <nav class="bigscreen">
+        <ul class= "bigscreen">
+            <li class="titulo"><a href="index.html"><h4 class="titulo home"></h4></a></li>
+            <li class="titulo"><a href="micuenta.html"><h4 class="titulo account"></h4></a></li>
+            <li class="titulo"><a href="favorites.html"><h4 class="titulo favo"></h4></a></li>
+            <li class="titulo"><a href="genders.html"><h4 class="titulo genre"></h4></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <!-- slide de generos mas escuhados-->
+
+        <div class="slideshow-container">
+            <div class="slides fade" style="display: block;">
+                <img src="../Galaxian/media/generos/electronica.gif">
+                <div id="elc" class="text"></div>
+            </div>
+            <div class="slides fade" style="display: none;">
+                <img src="../Galaxian/media/generos/rock.gif">
+                <div class="text">Rock</div>
+            </div>
+            <div class="slides fade" style="display: none;">
+                <img src="../Galaxian/media/generos/trap 2.gif">
+                <div class="text">Trap</div>
+            </div>  
+            <div class="slides fade" style="display: none;">
+                <img src="../Galaxian/media/generos/regeaton.gif">
+                <div class="text">Regeaton</div>
+            </div> 
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        
+
+        <!-- todos los generos -->
+        <div class="todos">
+            <h1 class="generos"></h1>
+            <article class="todosLosGeneros">
+               
+                    
+            </article>
+        </div>
+        
+    </main>
+
+    <!-- REPRODUCTOR INICIO -->
+        
+    <article class="reprod">
+
+        <div class="reprod-container">
+            
+        </div>
+
+    </article>   
+
+    <!-- REPRODUCTOR FINAL -->
+
+    <!-- FOOTER INICIO -->
+    <footer>
+        <div class="top">
+            <div class="parent">
+                <h3>Galaxian Music®</h3>
+            </div>
+            <div class="parent">
+                <p>powered by</p>
+                <img src="media/Footer_Header/deezer-logo.png" alt="logo deezer" class="dezzer">
+            </div>
+        </div>
+        <div class="derecha">
+            <h4 class="devs"></h6>
+                <ul class="nombres">
+                    <li class="item-dev">
+                        <h5>Gaston Loza M.</h5>
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                    <li class="item-dev">
+                        <h5>Benjamin Echague</h5>
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <h6 class="colab"></h6>
+        </div>
+    </footer>
+    <!-- FOOTER FINAL -->
+</body>
+</html>

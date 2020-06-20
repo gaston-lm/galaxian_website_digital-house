@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+}
+
+.title {
+    margin-top: 77px;
+}
+.container {
+    height:auto !important;
+    min-height:100%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+.ul {
+    margin-bottom: 0;
+    padding-bottom: 90px;
+}
+
+.fa-trash-alt {
+    color: rgb(197, 197, 197);
+    margin: auto 8px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .fa-trash-alt {
+        color: rgb(197, 197, 197);
+        margin: auto 10px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .fa-trash-alt {
+        color: rgb(197, 197, 197);
+        font-size: 20px;
+        margin: auto 17px;
+    }
+}
+

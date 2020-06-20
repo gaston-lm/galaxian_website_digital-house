@@ -1,0 +1,132 @@
+
+nav.bigscreen {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+    /* GENERAL */
+
+    nav.bigscreen {
+        display: block;
+        width: 22%;
+        height: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background-color: rgb(6, 2, 10);
+        border-right: solid 0.6px rgba(165, 165, 229, 0.753);
+    }
+
+    ul.bigscreen {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    /* TITULOS */
+
+    li.titulo {
+        width: 95%;
+        margin-bottom: 20px;
+        color: rgb(80, 77, 77);
+    }
+
+    li.titulo a {
+        text-decoration: none;
+        color:white;
+    }
+
+    h4.titulo {
+        text-transform: uppercase;
+        color: rgb(154, 154, 155);
+        margin-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: 'Spartan', sans-serif;
+        font-size: 23px;
+        max-width: 100%;
+        width: max-content;
+    }
+
+    /* REPRODUCTOR */
+
+    ol.rep {
+        list-style: decimal;
+        width: 100%;
+    }
+
+    li.rep {
+        display: grid;
+        grid-template-columns: 17% 78%;
+        justify-content: space-around;
+        grid-template-rows: 40px;
+        margin-bottom: 10px;
+        background: transparent;
+    }
+
+    p.i {
+        width: 100%;
+        font-size: 100%;
+        margin: auto auto;
+    }
+
+    a.repCancion {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 100%;
+        margin: auto 0;
+    }
+
+    div.repB {
+        display: grid;
+        grid-template-columns: 50% 46%;
+        justify-content: space-around;
+    }
+
+    a#repArtista {
+        text-decoration: none;
+        color: rgba(155, 0, 245, 0.692);
+        font-family: sans-serif;
+        font-size: 90%;
+        margin: auto 0;
+    }
+
+    p.rep {
+        font-family: sans-serif;
+        font-size: 100%;
+        margin: auto 0;
+    }
+
+    /* REP DESPLEGABLE */
+
+    ol.rep {
+        display: none;
+    }
+
+    h4.titulo:hover {
+        color: #2f9bc1;
+        transition: color .2s;
+    }
+
+    .bigscreen li:hover > ol {
+        display: block;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1230px) {
+
+    nav.bigscreen {
+        display: block;
+        width: 19%;
+    }
+}
+
+@media (min-width: 1300px) {
+    
+    nav.bigscreen {
+        display: block;
+        width: 17%;
+    }
+}

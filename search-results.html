@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxian - </title>
+    <link rel="shortcut icon" href="media/icon/favicon-32x32.png">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js"></script>
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <!-- Galaxian CSS -->
+    <link rel="stylesheet" href="css/fijo.css">
+    <link rel="stylesheet" href="css/menuPC.css">
+    <link rel="stylesheet" href="css/search-results.css">
+    <!-- Galaxian JS -->
+    <script src="js/search-results.js"></script>
+    <script src="js/fijo.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER INICIO -->
+        <header class="header">
+            <a class="1" href="index.html"><img src="media/icon/favicon-32x32.png" alt="Logo Galaxian" class="logo"></a>
+            <div class="buscador">
+                <form action="search-results.html" method="GET">
+                    <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+                    <input class="searcher" type="text" placeholder="" name="searcher" id="">
+                </form>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="toggle-nav">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <ul class="navegacion">
+                    <li><a class="home" href="index.html"></a></li>
+                    <li><a class="account" href="micuenta.html"></a></li>
+                    <li><a class="favo" href="favorites.html"></a></li>
+                    <li class="genero"><a class="genre" href="genders.html"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- HEADER FINAL -->
+
+        <!-- nav pc -->
+        <nav class="bigscreen">
+            <ul class= "bigscreen">
+                <li class="titulo"><a href="index.html"><h4 class="titulo home"></h4></a></li>
+                <li class="titulo"><a href="micuenta.html"><h4 class="titulo account"></h4></a></li>
+                <li class="titulo"><a href="favorites.html"><h4 class="titulo favo"></h4></a></li>
+                <li class="titulo"><a href="genders.html"><h4 class="titulo genre"></h4></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 class="pri"></h2>
+            <h2 class="title-artist"></h2>
+            <div class="carrousel artirstCar">
+                <div uk-slider="center: true">
+
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                
+                        <ul class="uk-slider-items uk-child-width-1-4@s uk-grid artistList">
+                                                        
+                        </ul>
+                
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                
+                    </div>
+                
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                
+                </div>
+            </div>
+            <h2 class="title-albums"></h2>
+            <div class="carrousel albumsCar">
+                <div uk-slider="center: true">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                
+                        <ul class="uk-slider-items uk-child-width-1-4@s uk-grid albumList">
+                            
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                
+
+                </div>
+            </div>
+            <h2 class="number-tracks"></h2>
+            <ul class="ul">
+                <li class="headings">
+                    <p></p>
+                    <h3 id="track"></h3>
+                    <h3 id="artist"></h3>
+                    <h3 id="album"></h3>
+                    <h3 class="dur"><i class="fab fa-algolia"></i></h3>
+                </li>
+            </ul>
+            <section class="botones"></section>
+        </main>
+        
+        <!-- REPRODUCTOR INICIO -->
+        
+        <article class="reprod">
+
+            <div class="reprod-container">
+                
+            </div>
+
+        </article>   
+
+        <!-- REPRODUCTOR FINAL -->
+
+    </div>
+
+    <!-- FOOTER INICIO -->
+    <footer>
+        <div class="top">
+            <div class="parent">
+                <h3>Galaxian Music®</h3>
+            </div>
+            <div class="parent">
+                <p>powered by</p>
+                <img src="media/Footer_Header/deezer-logo.png" alt="logo deezer" class="dezzer">
+            </div>
+        </div>
+        <div class="derecha">
+            <h4 class="devs"></h6>
+                <ul class="nombres">
+                    <li class="item-dev">
+                        <h5>Gaston Loza M.</h5>
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                    <li class="item-dev">
+                        <h5>Benjamin Echague</h5>
+                        <div class="redes-sociales">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                <h6 class="colab"></h6>
+        </div>
+    </footer>
+    <!-- FOOTER FINAL -->
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+.titule {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(26, 21, 36);
+    color: ivory;
+    margin-top: 20px;
+}
+
+h2{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    background-color: rgb(26, 21, 36);
+    color: ivory;
+    border-radius: 30px;
+    
+}
+a {
+    text-decoration: none;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+.genero img{
+    border-radius: 20%;
+    width: 100%;
+    border: 2px solid rgb(81, 185, 226);
+}
+
+
+@media only screen and (min-width: 1024px){
+    h1{
+        font-size: 50px;
+        margin-top: 40px;
+    }
+    .container {
+        width: 76%;
+        margin-left: 23%;
+      }
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
