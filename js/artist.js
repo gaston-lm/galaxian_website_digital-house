@@ -46,9 +46,9 @@ window.addEventListener("load", function() {
 
             document.querySelector(".infoArtist img").src = res.picture_xl;
 
-            document.querySelector('.play-artist').addEventListener('click', function() {
+            document.querySelector('.play-artist').addEventListener('click', function(e) {
 
-                console.log("hola")
+                e.preventDefault();
                 document.querySelector('.reprod-container').innerHTML = `
                 <iframe class="reprod" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=false&width=700&height=350&color=2f9bc1&layout=dark&size=medium&type=radio&id=artist-` + artistId + `&app_id=1" width="700" height="350"></iframe>
                 `
