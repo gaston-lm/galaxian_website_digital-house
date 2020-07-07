@@ -1,5 +1,3 @@
-JSON.parse('[1, 2, 3, 4]');
-JSON.parse('{"foo": 1}');
 window.addEventListener("load", function() { 
 
     let queryString = new URLSearchParams(location.search);
@@ -7,6 +5,19 @@ window.addEventListener("load", function() {
     console.log(sessionStorage.getItem("user-name"))
     console.log(queryString.get("user"))
     let user;
+
+    let spinner = document.getElementById("spinner");
+    let searchShadow = document.getElementById("searchShadow");
+
+    function showSpinner() {
+        spinner.className = "show";
+        searchShadow.className = "show";
+    }
+
+    function hideSpinner() {
+        spinner.className = spinner.className.replace("show", "");
+        searchShadow.className = searchShadow.className.replace("show", "");
+    }
 
     if ((queryString.get("user") == null) && ((sessionStorage.getItem("user-name") == null) || (sessionStorage.getItem("user-name") == 'null'))) {
         function noScroll() {
@@ -64,8 +75,10 @@ window.addEventListener("load", function() {
         user = queryString.get("user");
         console.log(user)
         sessionStorage.setItem("user-name", user);
+        showSpinner();
     } else {
         document.querySelector('.banner').style.display = 'none';
+        showSpinner();
     } 
 
     let idioma = sessionStorage.getItem("idioma");
@@ -370,6 +383,8 @@ window.addEventListener("load", function() {
                 })
 
             })
+
+            hideSpinner();
         }
     )
   
