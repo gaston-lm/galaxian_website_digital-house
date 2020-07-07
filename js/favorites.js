@@ -9,6 +9,21 @@ window.addEventListener("load", function() {
         // Return str truncated with '...' concatenated to the end of str.
         return str.slice(0, add) + '...'
     }
+
+    let spinner = document.getElementById("spinner");
+    let searchShadow = document.getElementById("searchShadow");
+
+    function showSpinner() {
+        spinner.className = "show";
+        searchShadow.className = "show";
+    }
+
+    function hideSpinner() {
+        spinner.className = spinner.className.replace("show", "");
+        searchShadow.className = searchShadow.className.replace("show", "");
+    }
+
+    showSpinner();
     
     let userName = sessionStorage.getItem("user-name");
     let user = userName.charAt(0).toUpperCase() + userName.slice(1)
@@ -16,7 +31,7 @@ window.addEventListener("load", function() {
 
     // Paso 1: Chequeo si hay tracks favoritos
 
-    if(sessionStorage.getItem("likeTracks") != null) {
+    if((sessionStorage.getItem("likeTracks") != null) && (sessionStorage.getItem("likeTracks") != "")) {
 
         if (idioma == 'EN') {
             document.querySelector('.title').innerHTML = user + "'s favorite tracks";
@@ -217,6 +232,8 @@ window.addEventListener("load", function() {
                             sessionStorage.setItem("likeTracks", arrayFavorites);
                         })
                     })
+
+                    hideSpinner();
                 }
             )
 
@@ -224,11 +241,13 @@ window.addEventListener("load", function() {
 
     } else {    
         if (idioma == 'EN') {
-            document.querySelector('.title').innerHTML = 'No tracks marked as favorite yet';
+            document.querySelector('.title').innerHTML = 'No tracks marked as favorite';
         } else {
-            document.querySelector('.title').innerHTML = 'No hay canciones marcadas como favoritas todavía';
+            document.querySelector('.title').innerHTML = 'No hay canciones marcadas como favoritas';
         }
         
         document.querySelector('.ul').style.display = 'none';
+
+        hideSpinner();
     }
 })

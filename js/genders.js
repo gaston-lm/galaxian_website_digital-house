@@ -21,6 +21,21 @@ window.addEventListener("load", function() {
         document.querySelector('#elc').innerHTML = 'Electrónica'
     }
 
+    let spinner = document.getElementById("spinner");
+    let searchShadow = document.getElementById("searchShadow");
+
+    function showSpinner() {
+        spinner.className = "show";
+        searchShadow.className = "show";
+    }
+
+    function hideSpinner() {
+        spinner.className = spinner.className.replace("show", "");
+        searchShadow.className = searchShadow.className.replace("show", "");
+    }
+
+    showSpinner();
+
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre')
     .then(
         function(response) {
@@ -79,6 +94,8 @@ window.addEventListener("load", function() {
                 document.querySelector(".todosLosGeneros").innerHTML += generoIndividual
                 
             }
+
+            hideSpinner();
             
         }
     )

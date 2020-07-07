@@ -9,6 +9,21 @@ window.addEventListener("load", function() {
 
     let idioma = sessionStorage.getItem("idioma");
 
+    let spinner = document.getElementById("spinner");
+    let searchShadow = document.getElementById("searchShadow");
+
+    function showSpinner() {
+        spinner.className = "show";
+        searchShadow.className = "show";
+    }
+
+    function hideSpinner() {
+        spinner.className = spinner.className.replace("show", "");
+        searchShadow.className = searchShadow.className.replace("show", "");
+    }
+
+    showSpinner();
+
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + trackId)
     .then(
         function(response) {
@@ -251,6 +266,8 @@ window.addEventListener("load", function() {
                     sessionStorage.setItem("likeTracks", arrayFavorites);
                 })
             }
+
+            hideSpinner();
 
         }
     )

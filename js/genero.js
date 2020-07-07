@@ -9,6 +9,21 @@ window.addEventListener("load", function() {
         return str.slice(0, add) + '...'
     }
 
+    let spinner = document.getElementById("spinner");
+    let searchShadow = document.getElementById("searchShadow");
+
+    function showSpinner() {
+        spinner.className = "show";
+        searchShadow.className = "show";
+    }
+
+    function hideSpinner() {
+        spinner.className = spinner.className.replace("show", "");
+        searchShadow.className = searchShadow.className.replace("show", "");
+    }
+
+    showSpinner();
+
     let queryString = location.search;
     let datos = new URLSearchParams(queryString);
     let idGenero = datos.get('generoID');
@@ -97,6 +112,8 @@ window.addEventListener("load", function() {
                     document.querySelector('title').innerHTML += titulo;
                 }
             }
+
+            hideSpinner();
         }
     )
 })
