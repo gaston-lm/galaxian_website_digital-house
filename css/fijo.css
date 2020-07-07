@@ -259,6 +259,52 @@ footer img.dezzer {
     z-index: 2;
 }
 
+/*---------------------SPINNER--------------------*/
+#searchShadow {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.945);
+    z-index: 1000;
+}
+  
+#spinner{
+    display: none;
+    width: 80px;
+    height: 80px;
+  
+    border: 2px solid #f3f3f31c;
+    border-top:6px solid #2f9bc1;
+    border-radius: 100%;
+  
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+  
+    animation: spin 1s linear infinite;
+    z-index: 1002;
+}
+  
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+  
+#spinner.show, #searchShadow.show {
+    visibility: visible;
+    display: block;
+}
+
+
 
 @media (min-width: 1024px) {
 
